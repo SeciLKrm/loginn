@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background:  url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-bar{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(120, 120, 245);
+    opacity: 0.8;
+    
+    
+}
+.menu-bar nav ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-bar nav ul li{
+    list-style: none;
+    width: 90%;
+    padding:12px;
+    margin: 15px;
+}
+.menu-bar nav ul a{
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+   color: white;
+    font-size:17px ;
+
+}
+
+
+ .active, .menu-bar ul li:hover {
+    background-color: #fce36a;
+    border-radius: 10px;
+
+    
+}
+
+ .sub-menu1{
+   display: none;
+}
+ 
+.menu-bar ul li:hover .sub-menu1{
+     display: block;   
+    position: absolute;
+    background-color:rgb (128, 107, 248);
+    margin-top: 12px;
+    margin-left: -10px;
+    background-color: rgb(120, 120, 245) ;
+     font-size: 10px;
+   
+
+
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+display: block;
+
+ 
+}
+.menu-bar ul li:hover .sub-menu1 ul li {
+  border-bottom: 1px dotted lightgray; 
+  background-color: transparent;
+   border-radius: 0; 
+   cursor: pointer;
+   width: 130px;
+   padding: 10px;
+   padding-left: 0;
+}
+
+
+.menu-bar ul li:hover .sub-menu1 ul li a{
+font-size: 12px;
+
+   
+}
+.menu-bar ul li:hover .sub-menu1  ul li a:hover {
+    color: black;
+    
+}
+
+  .bi-caret-right{
+    float: right;
+    }
+
+.sub-menu2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    margin-top: -45px;
+    margin-left: 130px;
+    background-color: rgb(120, 120, 245);
+    color: white;
+    transition: 0.7s;
+}
+
+/*Taşıyıcı Alan */
+
+section{
+background-color: rgb(180, 177, 177);
+width: 25%;
+height: auto;
+position: absolute;
+top:220px;
+left: 800px;
+border-radius: 10px;
+box-shadow: 0 0 8px rgb(168, 167, 167);
+}
+ .form__title{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+ }
+
+
+ .form__input--group{
+    margin: 20px;
+    text-align: center;
+    
+ }
+ .form__input{
+    width: 100%;
+    display: block;
+    outline: none;
+    border: 2px solid #ddd;
+    padding: 0.4rem;
+    background-color: rgb(212, 212, 212);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(165, 162, 162);
+
+ }
+
+.form__input:focus{
+    background-color:#fff ;
+}
+ 
+.form__button{
+    width: 90%;
+    height: auto;
+    padding: 1.1rem 1.1rem;
+    background-color:rgb(128, 107, 248);
+    outline: none;
+    border: none;
+   font-size: 1.1rem;
+   transition: all 0.5s;
+   margin-left: 15px;
+   border-radius: 5px;
+}
+.form__button:hover{
+    background-color: rgb(250, 85, 85);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.form__button:active{
+    transform: scale(0.92);
+    transition: all 0.5s;
+
+}
+
+.form__text{
+    text-align: center;
+    padding: 10px;
+}
+
+ .form__link{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(124, 124, 245);
+    font-size: 17px;
+    
+}
+   
+.form__link:hover{
+    text-decoration: underline;
+}
